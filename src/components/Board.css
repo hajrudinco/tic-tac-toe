@@ -1,0 +1,24 @@
+.Board-container {
+
+}
+
+.Board-table {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.Board-cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    float: left;
+    font-size: 40px;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.Board-cell--winner {
+    background-color: green;
+}
