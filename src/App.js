@@ -22,7 +22,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Tic-Tac-Toe game</h1>
+          <h1 className="App-title">Welcome to the Tic-Tac-Toe game</h1>
           <button className="App-startButton" onClick={this.startGame}>NEW GAME</button>
         </header>
         { this.renderBoard() }
