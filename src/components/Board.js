@@ -23,17 +23,20 @@ class Board extends Component {
         }
     }
 
+    componentDidUpdate() {
+        this.checkWinner();
+    }
+
     setBoardValue = (index) => {
-        const board = this.state.board;
-        if (this.state.winIndices || board[index] !== null) {
+        if (this.state.winIndices || this.state.board[index] !== null) {
             return;
         }
 
+        const board = [ ...(this.state.board) ];
         board[index] = this.state.player;
         const player = this.state.player !== 'X' ? 'X' : 'O';
 
         this.setState({ board, player });
-        this.checkWinner();
     }
 
     checkThree(i, j, k) {
